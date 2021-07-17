@@ -1,6 +1,6 @@
  library(tidyverse)
   mpg_data_table <- read.csv(file = 'MechaCar_mpg.csv', check.names=F,stringsAsFactors = T)
-  View(mpg_data_table)
+  View(mpg_data_table) 
   lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mpg_data_table) 
   summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle +  AWD, data=mpg_data_table))
   head(mpg_data_table) #The top 6 entry from the Data Set
@@ -13,3 +13,8 @@
    lot_summary <- Suspension_Coil_Table %>%  group_by(Manufacturing_Lot) %>% summarize(MEAN =mean(PSI), MEDIAN=median(PSI),SD=sd(PSI), VARIANCE=var(PSI))
    lot_summary 
    
+   # Deliverable #3
+   t.test(Suspension_Coil_Table$PSI,mu=1500)
+   t.test(subset(Suspension_Coil_Table,Manufacturing_Lot=="Lot1")$PSI,mu=1500)
+   t.test(subset(Suspension_Coil_Table,Manufacturing_Lot=="Lot2")$PSI,mu=1500)
+   t.test(subset(Suspension_Coil_Table,Manufacturing_Lot=="Lot3")$PSI,mu=1500)
