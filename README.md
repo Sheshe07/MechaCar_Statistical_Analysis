@@ -2,7 +2,6 @@
 ## Linear Regression to Predict MPG
 
 ![alt text](LR.png)
-<img width="685" alt="lot-total" src="https://user-images.githubusercontent.com/79114781/126024023-7dc3d2c7-56b1-400e-b5e1-763325a1de72.png">
 
 ## Background
 Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. I was asked to assist Jeremy with this project.
@@ -14,7 +13,8 @@ Jeremy is approached by upper management about a special project. AutosRUs’ ne
 
 ## Summary Statistics on Suspension Coils
 ## Deliverable 2
-![alt text](lot-total.png)
+<img width="685" alt="lot-total" src="https://user-images.githubusercontent.com/79114781/126024023-7dc3d2c7-56b1-400e-b5e1-763325a1de72.png">
+
 
 Lot 1 and Lot 2 are within the design percification. But, lot 3 has a lot more variance that exceed that manufacture specs but combin data is within the percification.
 
